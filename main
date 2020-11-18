@@ -1,0 +1,16 @@
+public class FindDivisor {
+
+  public long numberOfDivisors(int n) {
+    
+    // Set count of divisors to 0
+    int divisors = 0;
+    
+    // Loop until n is reached. If remainder of n / i = 0 then it is a divisor and
+    // Add one to divisor count
+    for (int i = 1; i <= n; i++) {
+      if (n % i == 0) {
+        divisors++;
+      }
+    }
+    return divisors;
+  }
